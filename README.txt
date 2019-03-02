@@ -30,8 +30,8 @@ Just a test example for usage (Example1.java):
     /**
      * Example1 Code exemplifies the usage of FSM with a fixed path XML configuration file 
      **/
-    import Action.FSMAction;
-    import FSM.FSM;
+    import FSMAction;
+    import FSM;
     
     public class Example1 {
         public static void testFSM() {
@@ -78,8 +78,8 @@ Another example (Example2.java):
      * Example2 Code exemplifies the usage of FSM with a XML configuration file specified
      * within the project as resource.
      **/
-    import Action.FSMAction;
-    import FSM.FSM;
+    import FSMAction;
+    import FSM;
     
     public class Example2 {
     

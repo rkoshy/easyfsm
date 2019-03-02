@@ -21,10 +21,10 @@
  * Author : Ankit
  * Report bugs to : hiiankit (at) gmail (dot) com
 **/
-package States;
+package io.github.ankzz.easyfsm.states;
 
-import Action.FSMAction;
-import Common.CustomXMLReader;
+import io.github.ankzz.easyfsm.action.FSMAction;
+import io.github.ankzz.easyfsm.common.CustomXMLReader;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
@@ -136,7 +136,7 @@ public class FSMState implements java.io.Serializable {
      * @param message message for which action is being assigned
      * @param act action method which needs to be assigned
      */
-    public void addMessageAction(String message, FSMAction act) {
+    public void addMessageAction(String message, FSMAction<Object> act) {
         if (_transitions!=null) {
             if (_transitions.containsKey(message)) {
                 ((FSMTransitionInfo)_transitions.get(message)).

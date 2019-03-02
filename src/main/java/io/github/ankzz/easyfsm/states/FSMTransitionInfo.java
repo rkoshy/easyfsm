@@ -21,9 +21,9 @@
  * Author : Ankit
  * Report bugs to : hiiankit (at) gmail (dot) com
 **/
-package States;
+package io.github.ankzz.easyfsm.states;
 
-import Action.FSMAction;
+import io.github.ankzz.easyfsm.action.FSMAction;
 
 /**
  * @file FSMTransitionInfo.java
@@ -38,9 +38,9 @@ import Action.FSMAction;
 public class FSMTransitionInfo implements java.io.Serializable {
     private static final long serialVersionUID = 5836424827126595488L;
     
-    private String action;
-    private String nextState;
-    private transient FSMAction _a;
+    private String                      action;
+    private String                      nextState;
+    private transient FSMAction<Object> _a;
     
     /**
      *
@@ -49,7 +49,7 @@ public class FSMTransitionInfo implements java.io.Serializable {
      * @param a Action function which needs to be executed when specified 
      *          message is received
      */
-    public FSMTransitionInfo(String message, String transState, FSMAction a) {
+    public FSMTransitionInfo(String message, String transState, FSMAction<Object> a) {
         action = message;
         nextState = transState;
         _a = a;
@@ -80,11 +80,11 @@ public class FSMTransitionInfo implements java.io.Serializable {
      *
      * @param act
      */
-    public void updateAction(FSMAction act) { _a = act; }
+    public void updateAction(FSMAction<Object> act) { _a = act; }
     
     /**
      *
      * @return
      */
-    public FSMAction getAction() { return _a; }
+    public FSMAction<Object> getAction() { return _a; }
 }

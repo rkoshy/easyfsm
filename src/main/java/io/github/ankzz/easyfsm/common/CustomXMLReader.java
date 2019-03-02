@@ -21,7 +21,7 @@
  * Author : Ankit
  * Report bugs to : hiiankit (at) gmail (dot) com
 **/
-package Common;
+package io.github.ankzz.easyfsm.common;
 
 import java.io.File;
 import java.io.IOException;

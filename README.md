@@ -43,8 +43,8 @@ Just a test example for usage (Example1.java):
     /**
      * Example1 Code exemplifies the usage of FSM with a fixed path XML configuration file 
      **/
-    import Action.FSMAction;
-    import FSM.FSM;
+    import FSMAction;
+    import FSM;
     
     public class Example1 {
         public static void testFSM() {
@@ -91,8 +91,8 @@ Another example (Example2.java):
      * Example2 Code exemplifies the usage of FSM with a XML configuration file specified
      * within the project as resource.
      **/
-    import Action.FSMAction;
-    import FSM.FSM;
+    import FSMAction;
+    import FSM;
     
     public class Example2 {
     
@@ -166,5 +166,5 @@ XML Configuration file should be of the following format:
 And here is a diagram representing the transitions for this finite state machine:
 
 <center>
-<img src="images/README_1.png" alt="1">
+<img src="docs/images/README_1.png" alt="1">
 </center>
